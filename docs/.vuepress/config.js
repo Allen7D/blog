@@ -10,6 +10,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '介绍', link: '/' },
+      { text: '前端', link: '/front-end/base' },
       { text: 'GitHub', link: 'https://github.com/Allen7D/blog' },
     ],
     sidebarDepth: 2, // 侧边栏显示 h2 和 h3 标题

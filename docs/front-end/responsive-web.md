@@ -3,7 +3,12 @@ sidebar: auto
 ---
 
 # Responsive Web
+<div align="right">
+    链接：<a href="http://www.ivinetrue.com:6001/" target="_blank">Responsive Web</a>
+</div>
+
 ## HTML
+
 ```html
 <!doctype html>
 <html lang="en">

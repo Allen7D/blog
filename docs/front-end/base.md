@@ -5,8 +5,9 @@ sidebar: auto
 # 前端基础
 
 ## HTML5 语义化
-<div style="text-align:right;">
-    参考：<a src="http://www.runoob.com/html/html5-semantic-elements.html">HTML5 语义元素</a>
+
+<div align="right">
+    参考：<a href="http://www.runoob.com/html/html5-semantic-elements.html" target="_blank">HTML5 语义元素</a>
 </div>
 
 - 无语义元素实例
@@ -30,9 +31,60 @@ article 是一个特殊的 section 标签，比 section 具有更明确的语义
     - 有 header、 footer、section
     
 
-## CSS 的 class 语义标准
-wrapper、content、container
+## CSS 语义
+### container、wrapper、content、item
+- container 表示包含 **`多个对象`** 的结构（用于 **`<div>`** 上）
+    - 一个页面最多1个（优先级很高: 可以与 **`<header>`** 同级）
+    - 下一级可以为 **`<section>`** 
+- wrapper 表示对 **`单个对象`** 进行包装
+    - 用于 **`margin、width、padding`** 
+- content 表示某对象的内容
+    - 应用 **`<section class='abc'>`** 的主要内容: **`<div class="abc-content">`** 
+    - 与 **`<h?>`** 同级 
+- item 
+    - 应用于 **`<section>`** 下的 **`多个重复元素`** 
+- 其他
+    - main
+
+#### 组合用法
+<div align="right">
+    参考：<a href="/front-end/responsive-web.html" target="_blank">Responsive Web</a>
+</div>
+
+子组件中
+```html
+<div class="demo-wrapper">
+  <div class="demo">
+     <h2 class="title">Demo 例子</h2>
+     <div class="container">
+        <section class="en">
+          <div class="en-content">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> 
+          </div>
+        </section>
+        <section class="zh">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </section>
+     </div>
+  </div>
+</div>
+```
+
+优先级(越里面，越多用): content > container > wrapper
+
+
+### icon
+```html
+<span class="icon icon-xyz"></span>
+```
+- icon: icon 的通用样式<br>
+- icon-xyz: icon 的内容
+
 
 
 ## 研究 rem
-rem: 等比收缩(viewport)使用了移动端，要有2套UI
+rem: 等比收缩(viewport)使用了移动端，至少得有2套UI
