@@ -4,7 +4,7 @@ sidebar: auto
 
 # 前端基础
 
-## HTML5 语义化
+## HTML5 语义
 
 <div align="right">
     参考：<a href="http://www.runoob.com/html/html5-semantic-elements.html" target="_blank">HTML5 语义元素</a>
@@ -29,7 +29,11 @@ article 是一个特殊的 section 标签，比 section 具有更明确的语义
 - article 强调独立性
     - 有头有尾
     - 有 header、 footer、section
-    
+
+### \<main\>标签
+一个文档(完整显示的页面)中最多1个 **`<main>`** 元素，级别非常高
+- 其内容必须唯一，不能含有重复元素(例如: 导航、侧边栏 等)
+- 不能是以下元素的后代：`<article>、<aside>、<footer>、<header> 或 <nav>`
 
 ## CSS 语义
 ### container、wrapper、content、item
@@ -86,5 +90,40 @@ article 是一个特殊的 section 标签，比 section 具有更明确的语义
 
 
 
-## 研究 rem
+###  研究 rem
 rem: 等比收缩(viewport)使用了移动端，至少得有2套UI
+
+## JS 语义
+<div align="right">
+    链接：<a href="https://juejin.im/post/592d4a5b0ce463006b43b6da#heading-2"  target="_blank">前端开发规范：命名规范、html规范、css规范、js规范</a>
+</div>
+
+### 函数命名
+- can
+- has
+    - 代替 isIn
+- is
+- get
+    - 返回一个非布尔值
+- set
+    - 无返回值、返回布尔值、或者返回链式对象
+- handle(处理)
+- toggle(开关)
+- trigger(触发)
+- on
+- load(加载)
+- reversed(倒转)
+
+#### Vue 中
+尽量将 `can、has、is` 放在 computer 中
+
+凡是有放在@click中的fn，都用handle开头
+
+### 变量命名
+- array	a
+- boolean	b
+- function	fn
+- int	i
+- object	o
+- regular	r
+- string	s
