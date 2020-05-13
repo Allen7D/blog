@@ -2,7 +2,7 @@
 sidebar: auto
 ---
 
-# 前端基础
+# 语义化
 
 ## HTML5 语义
 

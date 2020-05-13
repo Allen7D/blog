@@ -1,11 +1,12 @@
 ---
-sidebar: auto
+home: true
+footer: MIT Licensed | Copyright © 2019-present Allen7D
 ---
 
 # 基本资料
 - 姓名: 董冬伟
 - Email: bodanli159951@163.com
-- GitHub: https://github.com/Allen7D
+- GitHub: [https://github.com/Allen7D](https://github.com/Allen7D)
 
 ## 个人概况
 - 对页面布局，HTML 语义化有深刻地理解；熟练掌握 CSS，对页面模块化开发有丰富的实战经验。
